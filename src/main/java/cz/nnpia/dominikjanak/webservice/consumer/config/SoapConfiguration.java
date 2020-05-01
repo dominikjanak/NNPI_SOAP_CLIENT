@@ -7,7 +7,6 @@ import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 
 @Configuration
 public class SoapConfiguration {
-
     @Bean
     public Jaxb2Marshaller marshaller() {
         Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
@@ -23,5 +22,4 @@ public class SoapConfiguration {
         client.setUnmarshaller(marshaller);
         return client;
     }
-
 }

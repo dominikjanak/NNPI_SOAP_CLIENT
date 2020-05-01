@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table tr th { padding: 0 15px;}
+        table tr td { text-align: center;}
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+        <tr>
+            <th>datum</th>
+            <th>rokPlatnosti</th>
+            <th>rozvrhDen</th>
+            <th>rozvrhDenStr</th>
+            <th>typRozvrhDne</th>
+            <th>typTydne</th>
+            <th>cisloTydne</th>
+        </tr>
+        </thead>
+        <tr th:each="d : ${data}">
+            <td th:text="${d.datum}"></td>
+            <td th:text="${d.rokPlatnosti}"></td>
+            <td th:text="${d.rozvrhDen}"></td>
+            <td th:text="${d.rozvrhDenStr}"></td>
+            <td th:text="${d.typRozvrhDne}"></td>
+            <td th:text="${d.typTydne}"></td>
+            <td th:text="${d.cisloTydne}"></td>
+        </tr>
+    </table>
+    <p><strong>Info:</strong> lze parametrizovat /kalendar?rok=2018</p>
+    <p><strong>Info:</strong> nutný parametr /kalendar?datum=2020-04-30</p>
+    <a href="/">Hlavní strana</a>
+</body>
+</html>

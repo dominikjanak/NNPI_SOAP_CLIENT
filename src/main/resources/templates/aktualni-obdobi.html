@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <thead>
+        <tr>
+            <th>Položka</th>
+            <th>Hodnota</th>
+        </tr>
+        </thead>
+        <tr>
+            <td>obdobi</td>
+            <td th:text="${obdobi.obdobi}"></td>
+        </tr>
+        <tr>
+            <td>akademRok</td>
+            <td th:text="${obdobi.akademRok}"></td>
+        </tr>
+        <tr>
+            <td>semestrInteligentne</td>
+            <td th:text="${obdobi.semestrInteligentne}"></td>
+        </tr>
+        <tr>
+            <td>akademRokInteligentne</td>
+            <td th:text="${obdobi.akademRokInteligentne}"></td>
+        </tr>
+        <tr>
+            <td>posledniVyucovaciDenRoku</td>
+            <td th:text="${obdobi.posledniVyucovaciDenRoku}"></td>
+        </tr>
+        <tr>
+            <td>posledniDenSemestruInteligentne</td>
+            <td th:text="${obdobi.posledniDenSemestruInteligentne}"></td>
+        </tr>
+        <tr>
+            <td>posledniDenZimnihoZkouskoveho</td>
+            <td th:text="${obdobi.posledniDenZimnihoZkouskoveho}"></td>
+        </tr>
+        <tr>
+            <td>posledniDenLetnihoZkouskoveho</td>
+            <td th:text="${obdobi.posledniDenLetnihoZkouskoveho}"></td>
+        </tr>
+        <tr>
+            <td>prvniDenStavajicihoAkademickehoRoku</td>
+            <td th:text="${obdobi.prvniDenStavajicihoAkademickehoRoku}"></td>
+        </tr>
+        <tr>
+            <td>posledniDenStavajicihoAkademickehoRoku</td>
+            <td th:text="${obdobi.posledniDenStavajicihoAkademickehoRoku}"></td>
+        </tr>
+    </table>
+
+    <a href="/">Hlavní strana</a>
+</body>
+</html>
